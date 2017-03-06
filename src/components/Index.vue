@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>{{ title }}</h1>
+    <h1>{{ l('hello') }}</h1>
     <button type="button" class="primary" name="goFoo" @click.prevent="goFoo()">Go Foo</button>
     <button type="button" class="primary" name="goBar" v-show='can("admin")' @click.prevent="goBar()">Go Bar</button>
     <button type="button" class="primary" name="chA" @click.prevent="changeAdmin()">Admin</button>
