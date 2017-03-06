@@ -1,13 +1,12 @@
-#	General Ignores
-node_modules
+.DS_Store
+node_modules/
+dist/
 npm-debug.log
-
-#	API Ignores
-nsw-financas-api/node_modules
-
-#	APP Ignores
-nsw-financas-app/node_modules
-nsw-financas-app/cordova/*
-nsw-financas-app/electron
-
-
+npm-debug.log.*
+selenium-debug.log
+test/unit/coverage
+test/e2e/reports
+cordova/platforms
+cordova/plugins
+thumbs.db
+!.gitkeep
