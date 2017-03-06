@@ -1,0 +1,13 @@
+#	General Ignores
+node_modules
+npm-debug.log
+
+#	API Ignores
+nsw-financas-api/node_modules
+
+#	APP Ignores
+nsw-financas-app/node_modules
+nsw-financas-app/cordova/*
+nsw-financas-app/electron
+
+
