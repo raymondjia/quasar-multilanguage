@@ -13,13 +13,23 @@ import store from './store'
 import router from './router'
 import VueAcl from 'vue-acl'
 import VueML from 'vue-multilanguage'
+import en from './lang/en'
+import pt from './lang/pt'
+import zh from './lang/zh'
 
 // install plugin
 Vue.use(Quasar) // Install Quasar Framework
 Vue.use(Vuex)
 
 Vue.use(VueAcl, {router: router, d_permission: 'any', store: store})
-Vue.use(VueML, {path: 'src/lang', d_language: 'pt', store: store})
+// Vue.use(VueML, {path: 'src/lang', d_language: 'zh', store: store})
+Vue.use(VueML, {
+  default: 'en',
+  en: en,
+  pt: pt,
+  zh: zh
+})
+
 Quasar.start(() => {
   /* eslint-disable no-new */
   new Vue({
